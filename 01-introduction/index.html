@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Introduction</title>
 
-    <!-- 
-        Linking the JavaScript file with 'defer' attribute.
-        'defer' makes sure that the script will only execute after the HTML is fully parsed.
-        Best practice when placing scripts inside <head>.
-    -->
-    <script defer src="./first.js"></script>
+    <!-- Linking the JavaScript file with 'defer' attribute. 'defer' ensures the script will execute after HTML parsing is complete. We can also use 'async' in the <head> tag, but it will execute the script as soon as it's downloaded, possibly interrupting DOM parsing. -->
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -21,10 +17,10 @@
     <div id="div-id"></div>
 
     <!-- 
-        Alternative way (if you don't use 'defer' or 'async'):
+        Alternative way (if we don't use 'defer' or 'async'):
         Place the <script> tag at the end of <body> to ensure HTML is loaded first.
     -->
-    <!-- <script src="./first.js"></script> -->
+    <!-- <script src="./script.js"></script> -->
 </body>
 
 </html>
