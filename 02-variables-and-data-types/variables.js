@@ -1,5 +1,5 @@
 // ----------------------
-// Introduction to Variables in JavaScript
+// Variables in JavaScript
 // ----------------------
 
 // Variables are containers for storing data values.
