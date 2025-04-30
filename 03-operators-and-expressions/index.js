@@ -109,3 +109,69 @@ console.log(1 > 4); // false
 console.log(3 < 4); // true
 console.log(4 >= 4); // true
 console.log(3 <= 3); // true
+
+// ----------------------
+// Logical Operators
+// ----------------------
+
+console.log("*** Logical Operators ***");
+
+// Logical AND (&&): Returns first falsy value or last truthy if all are truthy
+console.log(false && false); // false
+console.log(true && false); // false
+console.log(true && true); // true
+console.log(false && true); // false
+console.log("cow" && "horse"); // "horse" (since both are truthy, returns second)
+
+// Logical OR (||): Returns first truthy value
+console.log(false || false); // false
+console.log(true || false); // true
+console.log(true || true); // true
+console.log(false || true); // true
+console.log("cow" || "horse"); // "cow" (returns first truthy)
+
+// Logical NOT (!): Inverts a boolean value
+console.log(!false); // true
+
+// Nullish Coalescing Operator (??):
+// Returns right-hand side only if left is null or undefined (NOT other falsy values like 0 or false)
+console.log(null ?? 1); // 1
+console.log(undefined ?? 3); // 3
+console.log(false ?? "string"); // false
+console.log(0 ?? "string"); // 0
+
+// ----------------------
+// Conditional (Ternary) Operator
+// ----------------------
+
+console.log("**** Conditional (ternary) operator ****");
+
+// Syntax: condition ? expression_if_true : expression_if_false
+let age = 24;
+age >= 60 ? console.log("Senior Citizen") : console.log("Non Senior Citizen");
+
+// ----------------------
+// Bitwise Operators
+// ----------------------
+
+console.log("**** Bitwise operators ****");
+
+// Bitwise AND (&): 1 if both bits are 1
+console.log(15 & 9); // 9
+// 15 (1111) & 9 (1001) => 1001 => 9
+
+// Bitwise OR (|): 1 if either bit is 1
+console.log(15 | 9); // 15
+// 1111 | 1001 => 1111 => 15
+
+// Bitwise XOR (^): 1 if bits are different
+console.log(15 ^ 9); // 6
+// 1111 ^ 1001 => 0110 => 6
+
+// Left Shift (<<): Shifts bits to the left (adds zeroes on the right)
+console.log(9 << 2); // 36
+// 1001 << 2 => 100100 => 36
+
+// Right Shift (>>): Shifts bits to the right (removes bits from right)
+console.log(9 >> 2); // 2
+// 1001 >> 2 => 0010 => 2
