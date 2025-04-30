@@ -175,3 +175,38 @@ console.log(9 << 2); // 36
 // Right Shift (>>): Shifts bits to the right (removes bits from right)
 console.log(9 >> 2); // 2
 // 1001 >> 2 => 0010 => 2
+
+// ----------------------
+// Grouping Operator ()
+// ----------------------
+
+console.log("**** Grouping ****");
+
+let p = 1;
+let q = 2;
+let r = 3;
+
+// Operator precedence: multiplication (*) has higher precedence than addition (+)
+console.log(p + q * r); // 1 + (2 * 3) = 1 + 6 = 7
+
+// You can change the precedence using parentheses (grouping)
+console.log((p + q) * r); // (1 + 2) * 3 = 3 * 3 = 9
+
+// ----------------------
+// typeof Operator
+// ----------------------
+
+console.log("**** typeof ****");
+
+// typeof is used to determine the data type of a value or variable
+console.log(typeof "ferdaus"); // "string"
+console.log(typeof false); // "boolean"
+
+let size = 100;
+console.log(typeof size); // "number"
+
+const numbers = [1, 2, 3, 4];
+console.log(typeof numbers); // "object" (arrays are technically objects in JS)
+
+console.log(typeof null); // "object" (this is a well-known JS quirk)
+console.log(typeof undefined); // "undefined" (no value assigned)
