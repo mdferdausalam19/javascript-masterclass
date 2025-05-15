@@ -51,7 +51,11 @@ The **Execution Context** is a fundamental concept in JavaScript. Think of it as
 
 Understanding the execution context, scope chain, and the behavior of `this` is crucial for writing correct and predictable JavaScript code. They govern how variables are accessed and how functions operate within your programs.
 
-## 🧩 Diagram - 01:
+## 🧩 JavaScript Execution Context - Diagram 01:
 
 ![JavaScript Execution Context](./assets/js-execution-context-diagram-01.png)
+
+## 🧩 JavaScript Execution Context - Diagram 02:
+
+![JavaScript Execution Context](./assets/js-execution-context-diagram-02.png)
 
